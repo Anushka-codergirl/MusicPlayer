@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="music player, music player app, music player code, music player mp3, music player ui">
+    <meta name="description" content="Anushka Music Player is the music app dedicated to Indian Singer Anushka Shahaney. Listen to all her songs only on Anush Player!">
+    <meta name="author" content="Anushka Raj"/>
+    <title>Anushka - Music Player</title>
+    <!--Icons-->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/headphone_1f3a7.png" type="image/x-icon">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div>
+            <ul class="nav-items">
+                <li><a href="#">Anush Player 🎵</a></li>
+                <li>
+                    <a href="./about.html" target="_blank">About App</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Main Content-Song Player-->
+    <div id="song-cover">
+        <div id="bg-image"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-data">
+                <div id="song-name"></div>
+                <div id="artist-name"></div>
+                <div id="player-time">
+                    <div id="current-time"></div>
+                    <div id="song-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="song-image">
+                <div id="img-card">
+                    <img src="./images/HalfGirlfriend.png" class="active" id="1" alt="Stay a Little Longer with Me">
+                    <img src="./images/HalfGirlfriend.png" id="2" alt="Lost Without You">
+                    <img src="./images/SomethingInCommon.png"id="3" alt="Something In Common">
+                    <img src="./images/HearMe.png" id="4" alt="Hear Me">
+                    <img src="./images/FireWithinMe.png" id="5" alt="Fire Within Me">
+                    <img src="./images/WomenLikeMe.png" id="6" alt="Women Like Me">
+                    <img src="./images/Ecstasy.png" id="7" alt="Ecstasy">
+                    <div id="buffer-box">Buffering....</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-previous">
+                            <i class="fas fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <i class="fas fa-forward"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made with <span>❤<span> by <a href="https://www.instagram.com/anush.codergirl">Anushka Raj Codergirl</a> for <a href="https://www.instagram.com/anushqa_official">Anushka Shahaney</a></p>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script  src="./script.js"></script>
+
+</body>
+</html>
